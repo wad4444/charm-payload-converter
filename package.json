@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/charm-payload-converter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Converts @rbxts/charm's SyncPayload in such a way, that makes it serializeable for flamework-binary-serializer.",
   "types": "out/index.d.ts",
   "files": [
     "out",
