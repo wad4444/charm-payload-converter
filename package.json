@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/charm-payload-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -32,7 +32,7 @@
     "roblox-ts": "^2.3.0",
     "typescript": "^5.5.3"
   },
-  "dependencies": {
-    "@rbxts/charm": "^0.5.2"
+  "peerDependencies": {
+    "@rbxts/charm": "^0.6.0"
   }
 }
