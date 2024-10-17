@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/charm-payload-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -33,6 +33,6 @@
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
-    "@rbxts/charm": "0.x"
+    "@rbxts/charm-sync": "0.x"
   }
 }

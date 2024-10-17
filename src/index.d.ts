@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Charm, { AtomMap, StateOfMap, SyncPayload } from "@rbxts/charm";
+
+import { AtomMap, StateOfMap, SyncPayload } from "@rbxts/charm-sync";
 
 type MaybeNone<T> = undefined extends T ? { __exists: false } : never;
 type DataTypes = {
@@ -38,7 +39,7 @@ export type ToSerializeablePayload<T extends SyncPayload<any>> =
 export type FromSerializeablePayload<T extends SerializeablePayload<any>> =
 	T extends SerializeablePayload<infer R> ? (AtomMap extends R ? never : SyncPayload<R>) : never;
 
-export declare function toSerializeablePayload<T extends Charm.SyncPayload<any>>(payload: T): ToSerializeablePayload<T>;
+export declare function toSerializeablePayload<T extends SyncPayload<any>>(payload: T): ToSerializeablePayload<T>;
 
 export declare function fromSerializeablePayload<T extends SerializeablePayload<any>>(
 	payload: T,
